@@ -30,3 +30,11 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Ensure certificates and private keys are not included in the repository
+*.pem
+*.crt
+*.key
+
+# We do not want any test rules.json (the default rules file) to be included as well
+rules.json
