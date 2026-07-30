@@ -128,7 +128,7 @@ func SetupRules(destHandler *http.ServeMux, rulesFile string, verbose bool) erro
 }
 
 func main() {
-	hostnameFlag := flag.String("hostname", "", "The host name to server TLS for")
+	hostnameFlag := flag.String("hostname", "", "The host name to serve TLS for")
 	pemFlag := flag.String("pemfile", "ca.pem", "The file where the certificate and private key is stored for the CA")
 	portNumberFlag := flag.Int("port", 443, "The port to listen on")
 	rulesFlag := flag.String("rules", "rules.json", "What file to read the proxy rules from")
